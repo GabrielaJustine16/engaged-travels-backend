@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  resources :visits
+  resources :trips
+  resources :comments
+  resources :attractions
   resources :locations
   #api engaged-travels.com/api/v1/resource
 
