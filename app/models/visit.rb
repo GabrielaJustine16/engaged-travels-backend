@@ -1,2 +1,5 @@
 class Visit < ApplicationRecord
-end
+    belongs_to :attraction
+    belongs_to :trip
+  end
+  
