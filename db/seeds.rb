@@ -5,10 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-#User.create(name: "Gabriela", username: "Justine16", password_digest: "password") 
-portland = Location.create!(city: "Portland", state: "Oregon", country: "USA") 
-garden = portland.attractions.create!(name: "Garden", description: "The rose garden in portland")
+#User.create!(name: "Gabriela", username: "Justine16", password: "password" ) 
+#portland = Location.create!(city: "Portland", state: "Oregon", country: "USA") 
+#garden = portland.attractions.create!(name: "Garden", description: "The rose garden in portland")
 gabriela = User.first
-gabriela_garden = gabriela.trips.create!(start_date: "2019-06-16",end_date: "2019-07-16")
-gabriela_garden.visits.create!(attraction: garden, date: "2019-06-16")
-gabriela.comments.create!(content: "very pretty", attraction: garden)
+gabriela_garden = gabriela.trips.create!( name: "Portland Trip", start_date: "2019-06-16",end_date: "2019-07-16")
+#gabriela_garden.visits.create!(attraction: garden, date: "2019-06-16")
+#gabriela.comments.create!(content: "very pretty", attraction: garden)
