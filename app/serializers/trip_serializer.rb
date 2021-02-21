@@ -1,6 +1,6 @@
 class TripSerializer
   include FastJsonapi::ObjectSerializer
-  attributes :name, :start_date, :end_date
+  attributes :name, :start_date, :end_date,:likes
 
   attribute :locations do |trip|
     trip.locations.map do |loc|
